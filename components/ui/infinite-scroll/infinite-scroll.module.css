@@ -1,0 +1,82 @@
+.scroller {
+  max-width: 1400px;
+  height: 100%;
+}
+
+.scroller__inner {
+  padding-block: 1rem;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 3rem;
+  gap: 1.5rem;
+}
+
+.scroller[data-animated="true"] {
+  overflow: visible;
+  -webkit-mask: linear-gradient(
+    90deg,
+    transparent,
+    #e7e3e0 15%,
+    #e7e3e0 85%,
+    transparent
+  );
+  mask: linear-gradient(
+    90deg,
+    transparent,
+    #e7e3e0 15%,
+    #e7e3e0 85%,
+    transparent
+  );
+}
+
+.scroller[data-animated="true"] .scroller__inner {
+  width: max-content;
+  flex-wrap: nowrap;
+  animation: scroll var(--_animation-duration, 40s)
+    var(--_animation-direction, forwards) linear infinite;
+}
+
+.scroller[data-direction="right"] {
+  --_animation-direction: reverse;
+}
+
+.scroller[data-direction="left"] {
+  --_animation-direction: forwards;
+}
+
+.scroller[data-speed="fast"] {
+  --_animation-duration: 10s;
+}
+
+.scroller[data-speed="normal"] {
+  --_animation-duration: 20s;
+}
+
+.scroller[data-speed="slow"] {
+  --_animation-duration: 60s;
+}
+
+.scroller[data-animated="true"][data-pause-on-hover="true"]:hover
+  .scroller__inner {
+  animation-play-state: paused;
+}
+
+.tag_list {
+  margin: 0;
+  padding-inline: 0;
+  list-style: none;
+  overflow: visible;
+}
+
+.tag_list li {
+  padding: 1rem;
+  background: var(--bg-secondary);
+  border-radius: 0.5rem;
+  box-shadow: 0 0.5rem 1rem -0.25rem var(--bg-primary);
+}
+
+@keyframes scroll {
+  to {
+    transform: translate(calc(-50% - 1rem));
+  }
+}
