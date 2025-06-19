@@ -21,7 +21,7 @@ export default function Hero() {
           </h1>
         </TextReveal>
         <TextReveal delay={0.3}>
-          <p className="sPelf-end text-xl tracking-wide md:w-1/2 md:text-2xl">
+          <p className="self-end text-xl tracking-wide md:w-1/2 md:text-2xl">
             Obatula has directed and served as an executive producer on a
             variety of film projects. His work demonstrates a consistent
             creative vision and a commitment to storytelling.
