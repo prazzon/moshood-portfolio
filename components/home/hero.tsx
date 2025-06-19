@@ -49,7 +49,7 @@ export default function Hero() {
         <motion.div
           initial={{ opacity: 0, width: 0 }}
           animate={{ opacity: 1, width: "100%" }}
-          transition={{ delay: 1.5, duration: 1.4, ease: "easeInOut" }}
+          transition={{ delay: 1.5, duration: 1.4, ease: [0.76, 0, 0.24, 1] }}
           className="z-99 rounded-2xl border-none border-[#262626]/50 bg-black"
         >
           <InfiniteScroll speed="normal" direction="left">
