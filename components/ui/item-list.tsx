@@ -1,4 +1,5 @@
 import { type Item } from "@/constants";
+import { useTouchDevice } from "@/hooks/useMobile";
 import { cn } from "@/lib/utils";
 import { motion } from "framer-motion";
 import { useState } from "react";
@@ -11,6 +12,7 @@ type ItemListProps = {
 
 export default function ItemList({ items, className }: ItemListProps) {
   const [modal, setModal] = useState({ active: false, index: 0 });
+  const isTouchDevice = useTouchDevice();
 
   return (
     <section
@@ -26,7 +28,7 @@ export default function ItemList({ items, className }: ItemListProps) {
           index={index}
         />
       ))}
-      <ListModal modal={modal} projects={items} />
+      {!isTouchDevice && <ListModal modal={modal} projects={items} />}
     </section>
   );
 }
