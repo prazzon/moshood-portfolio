@@ -36,7 +36,7 @@ export default function Hero() {
       >
         <motion.div style={{ y }} className="relative h-full">
           <Image
-            src={"/images/filmography.jpg"}
+            src={"/images/filmography.png"}
             fill
             alt="image"
             className="object-cover object-[50%_10%] grayscale"
