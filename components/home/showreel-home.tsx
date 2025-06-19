@@ -101,7 +101,7 @@ export default function ShowreelHome() {
                     >
                       <button className="flex cursor-pointer items-center gap-1 overflow-hidden rounded-full bg-black/80 px-2 py-1 md:gap-2 md:px-4">
                         <Play className="size-2 md:size-4" />
-                        Play Showreel
+                        View Showreel
                       </button>
                     </motion.p>
                   </div>
