@@ -220,7 +220,7 @@ function CollaboratorCard({ collaborator }: { collaborator: Collaborator }) {
     //  >
     <li
       key={collaborator.name}
-      className="group relative mt-8 flex size-50 cursor-pointer flex-col items-center gap-6 overflow-hidden !rounded-2xl sm:h-68 sm:w-52"
+      className="group relative mt-8 flex size-40 cursor-pointer flex-col items-center gap-6 overflow-hidden !rounded-2xl sm:h-68 sm:w-52"
     >
       <div className="absolute top-0 z-5 h-full w-full bg-gradient-to-b from-transparent to-black/80" />
       <Image
