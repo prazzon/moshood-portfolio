@@ -45,10 +45,7 @@ export function CircularButton({ onClick, className }: CircularButtonProps) {
             />
           </defs>
           <text className="text-xs font-medium tracking-wider">
-            <textPath
-              href="#circle"
-              className="fill-stone-900 dark:fill-gray-200"
-            >
+            <textPath href="#circle" className="fill-gray-200">
               PLAY SHOWREEL • PLAY SHOWREEL • PLAY SHOWREEL •
             </textPath>
           </text>
