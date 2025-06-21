@@ -1,107 +1,112 @@
-export type Item = {
+type VideoItem = {
+  type: "video";
+  src: string;
+};
+
+type LinkItem = {
+  type: "link";
+  href: string;
+};
+
+type ItemType = VideoItem | LinkItem | { type: "none" };
+
+export type Item = ItemType & {
   title: string;
   subTitle: string;
   rightText: string;
-  src: string;
-  color?: string;
+  image: string;
 };
 
-const getRandomColor = () => {
-  const colors = [
-    "#FF6B6B",
-    "#6BCB77",
-    "#4D96FF",
-    "#FFD93D",
-    "#845EC2",
-    "#FF9671",
-    "#FFC75F",
-    "#0081CF",
-    "#B39CD0",
-    "#F9F871",
-  ];
-  return colors[Math.floor(Math.random() * colors.length)];
-};
-
-export const filmographyItems = [
+export const filmographyItems: Item[] = [
   {
     title: "Agemo",
     subTitle: "2024",
     rightText: "Director & EP",
-    src: "1.png",
-    color: getRandomColor(),
+    type: "video",
+    src: "/videos/video-1.mp4",
+    image: "1.png",
   },
   {
     title: "Invest Naija",
     subTitle: "2024",
     rightText: "Director & EP",
-    src: "1.png",
-    color: getRandomColor(),
+    type: "link",
+    href: "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
+    image: "1.png",
   },
   {
     title: "CTF Trailer",
     subTitle: "2024",
     rightText: "Director & EP",
-    src: "1.png",
-    color: getRandomColor(),
+    type: "none",
+    image: "1.png",
   },
   {
     title: "Plagued",
     subTitle: "2020",
     rightText: "Director & EP",
-    src: "1.png",
-    color: getRandomColor(),
+    type: "video",
+    src: "/videos/video-1.mp4",
+    image: "1.png",
   },
   {
     title: "South African Love Story | Stretch",
     subTitle: "2019",
     rightText: "Director & EP",
-    src: "1.png",
-    color: getRandomColor(),
+    type: "video",
+    src: "/videos/video-1.mp4",
+    image: "1.png",
   },
   {
     title: "Now",
     subTitle: "2019",
     rightText: "Director & EP",
-    src: "1.png",
-    color: getRandomColor(),
+    type: "video",
+    src: "/videos/video-1.mp4",
+    image: "1.png",
   },
   {
     title: "Part of Me",
     subTitle: "2019",
     rightText: "Director & EP",
-    src: "1.png",
-    color: getRandomColor(),
+    type: "video",
+    src: "/videos/video-1.mp4",
+    image: "1.png",
   },
   {
     title: "The Olympian's Torch",
     subTitle: "2015",
     rightText: "Director & EP",
-    src: "1.png",
-    color: getRandomColor(),
+    type: "video",
+    src: "/videos/video-1.mp4",
+    image: "1.png",
   },
 ];
 
-export const pressItems = [
+export const pressItems: Item[] = [
   {
     title:
       "Related Motions Teases “Agemo” First Look Photos Ahead of 2024 Release",
     subTitle: "2024",
     rightText: "ShockNG",
-    src: "press-1.png",
-    color: "#f0f0f0",
+    type: "link",
+    href: "https://shockng.com/agemo-movie-directed-by-moshood-abiola-obatula/",
+    image: "press-1.png",
   },
   {
     title: "Agemo – dir. Moshood Abiola Obatula",
     subTitle: "2024",
     rightText: "festregards",
-    src: "press-2.png",
-    color: "#f1f1f1",
+    type: "link",
+    href: "https://festregards.com/2024/09/18/agemo-dir-moshood-abiola-obatula/",
+    image: "press-2.png",
   },
   {
     title: "Abiola’s supernatural thriller set for 2024",
     subTitle: "2024",
     rightText: "contentnigeria",
-    src: "press-3.png",
-    color: "#000",
+    type: "link",
+    href: "https://contentnigeria.net/tag/moshood-abiola-obatula/",
+    image: "press-3.png",
   },
 ];
