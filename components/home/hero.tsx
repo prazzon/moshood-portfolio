@@ -5,6 +5,7 @@ import { motion } from "framer-motion";
 import { AnimatedLetters } from "../ui/animated-letters";
 import { CircularButton } from "../ui/circular-button";
 import InfiniteScroll from "../ui/infinite-scroll/infinite-scroll";
+import VideoPlayerModal from "../ui/video-player";
 
 export default function Hero() {
   const handleShowreel = () => {
@@ -65,14 +66,20 @@ export default function Hero() {
       </div>
 
       {/* Showreel Button */}
-      <motion.div
-        initial={{ opacity: 0, scale: 0.8 }}
-        animate={{ opacity: 1, scale: 1 }}
-        transition={{ delay: 2, duration: 0.5 }}
-        className="absolute right-8 bottom-8 z-10 md:right-12"
-      >
-        <CircularButton onClick={handleShowreel} />
-      </motion.div>
+      <VideoPlayerModal
+        videoUrl="/videos/video-1.mp4"
+        autoPlay
+        trigger={
+          <motion.div
+            initial={{ opacity: 0, scale: 0.8 }}
+            animate={{ opacity: 1, scale: 1 }}
+            transition={{ delay: 2, duration: 0.5 }}
+            className="absolute right-8 bottom-8 z-10 md:right-12"
+          >
+            <CircularButton onClick={handleShowreel} />
+          </motion.div>
+        }
+      />
     </div>
   );
 }
