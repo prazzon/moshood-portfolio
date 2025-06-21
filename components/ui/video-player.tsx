@@ -337,9 +337,6 @@ const VideoPlayerModal: React.FC<VideoPlayerModalProps> = ({
                 <div className="flex flex-col items-center gap-4 text-white">
                   <AlertCircle className="h-8 w-8 text-red-500" />
                   <p className="text-sm font-medium">Error loading video</p>
-                  <p className="text-xs text-white/70">
-                    Please check the video URL
-                  </p>
                 </div>
               </motion.div>
             )}
