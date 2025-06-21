@@ -86,15 +86,15 @@ export default function ListModal({ modal, projects }: ListModalProps) {
       >
         <div style={{ top: index * -100 + "%" }} className={styles.modalSlider}>
           {projects.map((project, index) => {
-            const { src, color } = project;
+            const { image } = project;
             return (
               <div
                 className={styles.modal}
-                style={{ backgroundColor: color }}
+                style={{ backgroundColor: "#000" }}
                 key={`modal_${index}`}
               >
                 <Image
-                  src={`/images/${src}`}
+                  src={`/images/${image}`}
                   width={300}
                   height={0}
                   alt="image"

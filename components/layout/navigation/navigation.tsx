@@ -101,7 +101,7 @@ export default function Navigation() {
   };
 
   return (
-    <header className="sticky top-0 z-99">
+    <header className="sticky top-0 z-50">
       <motion.div
         initial={{ opacity: 0, y: -180 }}
         animate={{ opacity: 1, y: 0 }}

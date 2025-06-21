@@ -5,6 +5,7 @@ import { motion } from "framer-motion";
 import { AnimatedLetters } from "../ui/animated-letters";
 import { CircularButton } from "../ui/circular-button";
 import InfiniteScroll from "../ui/infinite-scroll/infinite-scroll";
+import VideoPlayerModal from "../ui/video-player";
 
 export default function Hero() {
   const handleShowreel = () => {
@@ -32,13 +33,12 @@ export default function Hero() {
         className={cn(
           "absolute inset-0",
           "[background-size:80px_80px]",
-          "[background-image:linear-gradient(to_right,#e4e4e7_1px,transparent_1px),linear-gradient(to_bottom,#e4e4e7_1px,transparent_1px)]",
-          "dark:[background-image:linear-gradient(to_right,#262626_1px,transparent_1px),linear-gradient(to_bottom,#262626_1px,transparent_1px)]",
+          "[background-image:linear-gradient(to_right,#262626_1px,transparent_1px),linear-gradient(to_bottom,#262626_1px,transparent_1px)]",
         )}
       />
 
       {/* Radial gradient for the container to give a faded look */}
-      <div className="pointer-events-none absolute inset-0 flex items-center justify-center bg-white [mask-image:radial-gradient(ellipse_at_center,transparent_20%,black)] dark:bg-black"></div>
+      <div className="pointer-events-none absolute inset-0 flex items-center justify-center bg-black [mask-image:radial-gradient(ellipse_at_center,transparent_20%,black)]"></div>
 
       {/* Hero content */}
       <div className="relative flex flex-col text-center text-8xl md:text-9xl">
@@ -66,14 +66,20 @@ export default function Hero() {
       </div>
 
       {/* Showreel Button */}
-      <motion.div
-        initial={{ opacity: 0, scale: 0.8 }}
-        animate={{ opacity: 1, scale: 1 }}
-        transition={{ delay: 2, duration: 0.5 }}
-        className="absolute right-8 bottom-8 z-10 md:right-12"
-      >
-        <CircularButton onClick={handleShowreel} />
-      </motion.div>
+      <VideoPlayerModal
+        videoUrl="/videos/video-1.mp4"
+        autoPlay
+        trigger={
+          <motion.div
+            initial={{ opacity: 0, scale: 0.8 }}
+            animate={{ opacity: 1, scale: 1 }}
+            transition={{ delay: 2, duration: 0.5 }}
+            className="absolute right-8 bottom-8 z-10 md:right-12"
+          >
+            <CircularButton onClick={handleShowreel} />
+          </motion.div>
+        }
+      />
     </div>
   );
 }
