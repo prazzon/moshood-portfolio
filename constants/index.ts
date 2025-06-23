@@ -24,22 +24,22 @@ export const filmographyItems: Item[] = [
     rightText: "Director & EP",
     type: "video",
     src: "/videos/video-1.mp4",
-    image: "1.png",
+    image: "/images/filmography/agemo.png",
   },
   {
     title: "Invest Naija",
     subTitle: "2024",
     rightText: "Director & EP",
     type: "link",
-    href: "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
-    image: "1.png",
+    href: "https://www.youtube.com/watch?v=bs3jOubJ2mQ",
+    image: "/images/filmography/invest_9ja.png",
   },
   {
     title: "CTF Trailer",
     subTitle: "2024",
     rightText: "Director & EP",
     type: "none",
-    image: "1.png",
+    image: "/images/filmography/ctf.png",
   },
   {
     title: "Plagued",
@@ -47,7 +47,7 @@ export const filmographyItems: Item[] = [
     rightText: "Director & EP",
     type: "video",
     src: "/videos/video-1.mp4",
-    image: "1.png",
+    image: "/images/filmography/plagued.png",
   },
   {
     title: "South African Love Story | Stretch",
@@ -55,7 +55,7 @@ export const filmographyItems: Item[] = [
     rightText: "Director & EP",
     type: "video",
     src: "/videos/video-1.mp4",
-    image: "1.png",
+    image: "/images/filmography/stretched.png",
   },
   {
     title: "Now",
@@ -63,7 +63,7 @@ export const filmographyItems: Item[] = [
     rightText: "Director & EP",
     type: "video",
     src: "/videos/video-1.mp4",
-    image: "1.png",
+    image: "/images/filmography/now.png",
   },
   {
     title: "Part of Me",
@@ -71,15 +71,15 @@ export const filmographyItems: Item[] = [
     rightText: "Director & EP",
     type: "video",
     src: "/videos/video-1.mp4",
-    image: "1.png",
+    image: "/images/filmography/part_of_me.png",
   },
   {
     title: "The Olympian's Torch",
     subTitle: "2015",
     rightText: "Director & EP",
-    type: "video",
-    src: "/videos/video-1.mp4",
-    image: "1.png",
+    type: "link",
+    href: "https://youtu.be/XF_TJ4yBJNU",
+    image: "/images/filmography/the_olympians_torch.png",
   },
 ];
 
@@ -91,7 +91,7 @@ export const pressItems: Item[] = [
     rightText: "ShockNG",
     type: "link",
     href: "https://shockng.com/agemo-movie-directed-by-moshood-abiola-obatula/",
-    image: "press-1.png",
+    image: "/images/press/press-1.png",
   },
   {
     title: "Agemo – dir. Moshood Abiola Obatula",
@@ -99,7 +99,7 @@ export const pressItems: Item[] = [
     rightText: "festregards",
     type: "link",
     href: "https://festregards.com/2024/09/18/agemo-dir-moshood-abiola-obatula/",
-    image: "press-2.png",
+    image: "/images/press/press-2.png",
   },
   {
     title: "Abiola’s supernatural thriller set for 2024",
@@ -107,6 +107,6 @@ export const pressItems: Item[] = [
     rightText: "contentnigeria",
     type: "link",
     href: "https://contentnigeria.net/tag/moshood-abiola-obatula/",
-    image: "press-3.png",
+    image: "/images/press/press-3.png",
   },
 ];

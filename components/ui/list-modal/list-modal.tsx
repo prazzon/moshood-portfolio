@@ -93,12 +93,7 @@ export default function ListModal({ modal, projects }: ListModalProps) {
                 style={{ backgroundColor: "#000" }}
                 key={`modal_${index}`}
               >
-                <Image
-                  src={`/images/${image}`}
-                  width={300}
-                  height={0}
-                  alt="image"
-                />
+                <Image src={image} width={300} height={0} alt="image" />
               </div>
             );
           })}
