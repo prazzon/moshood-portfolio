@@ -113,12 +113,14 @@ export default function Navigation() {
         className="flex h-32 justify-center px-12 text-white md:px-20 lg:px-28"
       >
         <div className="flex w-full items-center justify-between">
-          <Image
-            src="/images/signature.png"
-            alt="signature"
-            width={100}
-            height={50}
-          />
+          <Link href="/">
+            <Image
+              src="/images/signature.png"
+              alt="signature"
+              width={100}
+              height={50}
+            />
+          </Link>
           <nav className="absolute left-[50%] hidden translate-x-[-50%] list-none items-center justify-center gap-4 space-x-4 text-xl tracking-wider md:flex">
             {navLinks.map((link, index) => {
               return (
