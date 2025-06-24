@@ -45,7 +45,7 @@ export default function Section() {
               className="flex w-full pt-4 tracking-wider"
               href="/collaborators"
             >
-              <span className="mt-2 border-b-2 text-base md:text-lg">
+              <span className="mt-2 border-b-2 border-gray-300 text-base md:text-lg">
                 View Collaborations
               </span>
             </Link>
