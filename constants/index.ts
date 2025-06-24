@@ -22,8 +22,8 @@ export const filmographyItems: Item[] = [
     title: "Agemo",
     subTitle: "2024",
     rightText: "Director & EP",
-    type: "video",
-    src: "/videos/video-1.mp4",
+    type: "link",
+    href: "https://youtu.be/_eNYhwHmeaY?si=NWjBOlE6nKlrrzDc",
     image: "/images/filmography/agemo.png",
   },
   {
@@ -38,7 +38,8 @@ export const filmographyItems: Item[] = [
     title: "CTF Trailer",
     subTitle: "2024",
     rightText: "Director & EP",
-    type: "none",
+    type: "video",
+    src: "https://res.cloudinary.com/dt5hzczvg/video/upload/v1750765028/jwsg0ct6xwtklxbjhdyl.mp4",
     image: "/images/filmography/ctf.png",
   },
   {
@@ -46,7 +47,7 @@ export const filmographyItems: Item[] = [
     subTitle: "2020",
     rightText: "Director & EP",
     type: "video",
-    src: "/videos/video-1.mp4",
+    src: "https://res.cloudinary.com/dt5hzczvg/video/upload/v1750765705/xe2uuyxsyggzfoprsedq.mp4",
     image: "/images/filmography/plagued.png",
   },
   {
@@ -54,7 +55,7 @@ export const filmographyItems: Item[] = [
     subTitle: "2019",
     rightText: "Director & EP",
     type: "video",
-    src: "/videos/video-1.mp4",
+    src: "https://res.cloudinary.com/dt5hzczvg/video/upload/v1750766564/kbkeguycblpbd0hz6oub.mp4",
     image: "/images/filmography/stretched.png",
   },
   {
@@ -62,7 +63,7 @@ export const filmographyItems: Item[] = [
     subTitle: "2019",
     rightText: "Director & EP",
     type: "video",
-    src: "/videos/video-1.mp4",
+    src: "https://res.cloudinary.com/dt5hzczvg/video/upload/v1750766589/ago1twsbwxo6izezuplc.mp4",
     image: "/images/filmography/now.png",
   },
   {
@@ -70,7 +71,7 @@ export const filmographyItems: Item[] = [
     subTitle: "2019",
     rightText: "Director & EP",
     type: "video",
-    src: "/videos/video-1.mp4",
+    src: "https://res.cloudinary.com/dt5hzczvg/video/upload/v1750767517/skokpufjeevydoekoqbf.mp4",
     image: "/images/filmography/part_of_me.png",
   },
   {
