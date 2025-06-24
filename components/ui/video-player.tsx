@@ -272,7 +272,7 @@ const VideoPlayerModal: React.FC<VideoPlayerModalProps> = ({
       </DialogTrigger>
       <DialogContent
         className={cn(
-          "aspect-video h-auto max-h-[90vh] w-6xl !max-w-[calc(100vw-4rem)] border-none bg-transparent p-0",
+          "aspect-video h-auto max-h-[90vh] min-h-[50vh] w-6xl !max-w-[calc(100vw-2rem)] border-none bg-transparent p-0",
           className,
         )}
         showCloseButton={false}
@@ -280,7 +280,7 @@ const VideoPlayerModal: React.FC<VideoPlayerModalProps> = ({
         <DialogClose asChild>
           <Button
             variant="secondary"
-            className="font-poppins absolute top-4 right-4 z-10 size-10 rounded-full bg-black/30 text-white backdrop-blur-[1px] hover:bg-black/50"
+            className="font-poppins absolute top-4 right-0 z-10 size-10 rounded-full bg-white/10 text-white backdrop-blur-[1px] hover:bg-white/20 md:right-4"
           >
             <X className="flex size-5" />
           </Button>
@@ -407,11 +407,11 @@ const VideoPlayerModal: React.FC<VideoPlayerModalProps> = ({
 
                 {/* Control Buttons */}
                 <div className="flex items-center justify-between">
-                  <div className="flex items-center gap-4">
+                  <div className="flex items-center gap-2 md:gap-4">
                     {/* Play/Pause */}
                     <motion.button
                       onClick={togglePlay}
-                      className="rounded-full bg-white/10 p-2 transition-colors duration-200 hover:bg-white/20"
+                      className="cursor-pointer rounded-full bg-white/10 p-2 transition-colors duration-200 hover:bg-white/20"
                       whileHover={{ scale: 1.05 }}
                       whileTap={{ scale: 0.95 }}
                     >
@@ -425,7 +425,7 @@ const VideoPlayerModal: React.FC<VideoPlayerModalProps> = ({
                     {/* Skip Buttons */}
                     <motion.button
                       onClick={() => skip(-10)}
-                      className="rounded-full bg-white/10 p-2 transition-colors duration-200 hover:bg-white/20"
+                      className="cursor-pointer rounded-full bg-white/10 p-2 transition-colors duration-200 hover:bg-white/20"
                       whileHover={{ scale: 1.05 }}
                       whileTap={{ scale: 0.95 }}
                     >
@@ -434,7 +434,7 @@ const VideoPlayerModal: React.FC<VideoPlayerModalProps> = ({
 
                     <motion.button
                       onClick={() => skip(10)}
-                      className="rounded-full bg-white/10 p-2 transition-colors duration-200 hover:bg-white/20"
+                      className="cursor-pointer rounded-full bg-white/10 p-2 transition-colors duration-200 hover:bg-white/20"
                       whileHover={{ scale: 1.05 }}
                       whileTap={{ scale: 0.95 }}
                     >
@@ -442,17 +442,17 @@ const VideoPlayerModal: React.FC<VideoPlayerModalProps> = ({
                     </motion.button>
 
                     {/* Time Display */}
-                    <div className="font-bebas-neue text-sm font-medium text-white">
+                    <div className="font-bebas-neue text-xs font-medium text-white md:text-sm">
                       {formatTime(currentTime)} / {formatTime(duration)}
                     </div>
                   </div>
 
-                  <div className="flex items-center gap-4">
+                  <div className="flex items-center gap-2 md:gap-4">
                     {/* Volume Control */}
                     <div className="flex items-center gap-2">
                       <motion.button
                         onClick={toggleMute}
-                        className="rounded-full bg-white/10 p-2 transition-colors duration-200 hover:bg-white/20"
+                        className="cursor-pointer rounded-full bg-white/10 p-2 transition-colors duration-200 hover:bg-white/20"
                         whileHover={{ scale: 1.05 }}
                         whileTap={{ scale: 0.95 }}
                       >
@@ -482,7 +482,7 @@ const VideoPlayerModal: React.FC<VideoPlayerModalProps> = ({
                     {/* Fullscreen */}
                     <motion.button
                       onClick={toggleFullscreen}
-                      className="rounded-full bg-white/10 p-2 transition-colors duration-200 hover:bg-white/20"
+                      className="cursor-pointer rounded-full bg-white/10 p-2 transition-colors duration-200 hover:bg-white/20"
                       whileHover={{ scale: 1.05 }}
                       whileTap={{ scale: 0.95 }}
                     >

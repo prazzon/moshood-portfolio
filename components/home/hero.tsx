@@ -29,7 +29,7 @@ export default function Hero() {
       <motion.div
         initial={{ scale: 1.5 }}
         animate={{ scale: 1 }}
-        transition={{ delay: 0.5, duration: 0.8 }}
+        transition={{ delay: 0.5, duration: 0.8, ease: [0.76, 0, 0.24, 1] }}
         className={cn(
           "absolute inset-0",
           "[background-size:80px_80px]",
@@ -50,17 +50,41 @@ export default function Hero() {
           initial={{ opacity: 0, width: 0 }}
           animate={{ opacity: 1, width: "100%" }}
           transition={{ delay: 1.5, duration: 1.4, ease: [0.76, 0, 0.24, 1] }}
-          className="z-99 rounded-2xl border-none border-[#262626]/50 bg-black"
+          className="z-99 rounded-3xl bg-black"
         >
-          <InfiniteScroll speed="normal" direction="left">
+          <InfiniteScroll
+            speed="normal"
+            direction="left"
+            className="border border-[#262626]/50"
+          >
             <span>Executive Producer</span>
-            <span>{"//"}</span>
+            <div className="inline-block">
+              <span
+                className="mx-2 inline-block h-2 w-2 rotate-45 bg-white align-middle"
+                aria-label="diamond"
+              />
+            </div>
             <span>Director</span>
-            <span>{"//"}</span>
+            <div className="inline-block">
+              <span
+                className="mx-2 inline-block h-2 w-2 rotate-45 bg-white align-middle"
+                aria-label="diamond"
+              />
+            </div>
             <span>Managing Director</span>
-            <span>{"//"}</span>
+            <div className="inline-block">
+              <span
+                className="mx-2 inline-block h-2 w-2 rotate-45 bg-white align-middle"
+                aria-label="diamond"
+              />
+            </div>
             <span>Creative Director</span>
-            <span>{"//"}</span>
+            <div className="inline-block">
+              <span
+                className="mx-2 inline-block h-2 w-2 rotate-45 bg-white align-middle"
+                aria-label="diamond"
+              />
+            </div>
           </InfiniteScroll>
         </motion.div>
       </div>
@@ -74,7 +98,7 @@ export default function Hero() {
             initial={{ opacity: 0, scale: 0.8 }}
             animate={{ opacity: 1, scale: 1 }}
             transition={{ delay: 2, duration: 0.5 }}
-            className="absolute right-8 bottom-8 z-10 md:right-12"
+            className="absolute right-8 bottom-0 z-10 md:right-12 md:bottom-8"
           >
             <CircularButton onClick={handleShowreel} />
           </motion.div>
