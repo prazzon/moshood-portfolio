@@ -28,7 +28,7 @@ export default function Section() {
               className="flex w-full justify-end tracking-wider"
               href="/filmography"
             >
-              <span className="mt-2 border-b-2 text-base md:text-lg">
+              <span className="mt-2 border-b-2 border-gray-300 text-base md:text-lg">
                 View Filmography
               </span>
             </Link>
@@ -60,7 +60,7 @@ export default function Section() {
               className="flex w-full justify-end tracking-wider"
               href="/press"
             >
-              <span className="mt-2 border-b-2 text-base md:text-lg">
+              <span className="mt-2 border-b-2 border-gray-300 text-base md:text-lg">
                 View Press
               </span>
             </Link>
