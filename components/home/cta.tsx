@@ -37,7 +37,7 @@ export default function CTA() {
         <div className="flex flex-col items-end gap-8 text-right text-2xl md:text-4xl">
           <TextReveal>
             <Link
-              className="align-center flex border-b-2 tracking-wider md:border-b-4"
+              className="align-center flex border-b-2 border-gray-300 tracking-wider md:border-b-4"
               href="mailto:directormosh@gmail.com"
             >
               <div className="flex">
@@ -48,7 +48,7 @@ export default function CTA() {
           </TextReveal>
           <TextReveal>
             <Link
-              className="align-center flex border-b-2 tracking-wider md:border-b-4"
+              className="align-center flex border-b-2 border-gray-300 tracking-wider md:border-b-4"
               href="https://www.instagram.com/directormosh?igsh=MWh2bWZ2YmYzN3BsMQ=="
             >
               <div className="flex justify-start">
@@ -59,7 +59,7 @@ export default function CTA() {
           </TextReveal>
           <TextReveal>
             <Link
-              className="align-center flex border-b-2 tracking-wider md:border-b-4"
+              className="align-center flex border-b-2 border-gray-300 tracking-wider md:border-b-4"
               href="https://www.linkedin.com/in/moshood-obatula-814049343"
             >
               <div className="flex justify-start">
