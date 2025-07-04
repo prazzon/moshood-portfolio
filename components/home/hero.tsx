@@ -91,7 +91,7 @@ export default function Hero() {
 
       {/* Showreel Button */}
       <VideoPlayerModal
-        videoUrl="/videos/video-1.mp4"
+        videoUrl="https://res.cloudinary.com/dt5hzczvg/video/upload/v1751660504/thriller_MD_1_qewutm.mp4"
         autoPlay
         trigger={
           <motion.div
