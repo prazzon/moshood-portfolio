@@ -8,11 +8,11 @@ export default function Footer() {
       style={{ clipPath: "polygon(0% 0, 100% 0%, 100% 100%, 0 100%)" }}
     >
       <div className="fixed bottom-0 h-[500px] w-full">
-        <div className="flex h-full w-full flex-col justify-between bg-[#4E4E5A] px-12 py-8">
+        <div className="flex h-full w-full flex-col justify-between bg-black px-12 py-8">
           <Nav />
           <div className="flex items-end justify-between">
             <h1 className="mt-10 text-[14vw] leading-[0.8]">Moshood Obatula</h1>
-            <p>©copyright</p>
+            <p>© copyright</p>
           </div>
         </div>
       </div>
@@ -38,8 +38,8 @@ const Nav = () => {
           Press
         </Link>
       </div>
-      {/* <div className="flex flex-col gap-2">
-        <h3 className="mb-2 text-[#ffffff80] uppercase">Education</h3>
+      {/* <div className="flex flex-col gap-2 text-xl tracking-widest">
+        <h3 className="mb-2 text-2xl text-[#ffffff80] uppercase">Education</h3>
         <p>News</p>
         <p>Learn</p>
         <p>Certification</p>
