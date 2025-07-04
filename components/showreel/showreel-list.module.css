@@ -93,8 +93,8 @@
         z-index: 3;
 
         @media (max-width: 768px) {
-          left: 5.5vw;
-          top: 30vh;
+          left: 60vw;
+          top: 35vh;
           width: 20vh;
         }
       }
