@@ -73,7 +73,7 @@ export default function Section() {
             src={"/images/biography-2.png"}
             fill
             alt="image"
-            className="object-cover object-[50%_10%] grayscale"
+            className="object-cover object-[50%_50%] grayscale"
           />
           <div className="absolute inset-0 bg-black/60"></div>
         </motion.div>

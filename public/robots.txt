@@ -1,0 +1,9 @@
+User-agent: *
+Allow: /
+
+# Sitemap
+Sitemap: https://moshoodobatula.com/sitemap.xml
+
+# Allow crawling of images
+Allow: /images/
+Allow: /videos/
