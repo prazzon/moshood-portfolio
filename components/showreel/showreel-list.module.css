@@ -1,6 +1,8 @@
 .container {
   margin-top: 20vh;
   min-height: 80vh;
+  /* overflow-x: hidden; */
+  /* overflow-y: visible; */
   /* margin-bottom: 50vh; */
 
   @media (max-width: 768px) {
@@ -59,13 +61,14 @@
         /* width: 40vh;
         min-width: 200px; */
         width: 30vh;
-        min-width: 165px;
+        min-width: 155px;
         aspect-ratio: 16 / 10;
         z-index: 2;
 
         @media (max-width: 768px) {
-          left: 55vw;
-          width: 25vh;
+          top: 0vh;
+          left: 48vw;
+          width: 20vh;
         }
       }
 
@@ -79,7 +82,7 @@
 
         @media (max-width: 768px) {
           left: 5.5vw;
-          top: 30vh;
+          top: 28vh;
           width: 20vh;
         }
       }
@@ -88,14 +91,14 @@
         left: 65vw;
         top: 50vh;
         width: 30vh;
-        min-width: 165px;
+        min-width: 150px;
         aspect-ratio: 16 / 10;
         z-index: 3;
 
         @media (max-width: 768px) {
-          left: 60vw;
-          top: 35vh;
-          width: 20vh;
+          left: 55vw;
+          top: 30vh;
+          width: 15vh;
         }
       }
     }
