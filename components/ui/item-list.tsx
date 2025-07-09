@@ -59,7 +59,7 @@ const Item = ({
             }}
           >
             <div>
-              <p className="mb-1.5 text-2xl text-zinc-50 transition-transform duration-300 group-hover:-translate-x-2">
+              <p className="mb-1.5 text-start text-2xl text-zinc-50 transition-transform duration-300 group-hover:-translate-x-2">
                 {title}
               </p>
               <p className="text-start text-lg text-zinc-500 uppercase">
