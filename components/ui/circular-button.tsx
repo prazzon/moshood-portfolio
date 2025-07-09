@@ -12,6 +12,7 @@ export function CircularButton({ onClick, className }: CircularButtonProps) {
   return (
     <motion.button
       onClick={onClick}
+      aria-label="Play Showreel"
       className={cn(
         "group relative flex h-32 w-32 items-center justify-center rounded-full",
         "cursor-pointer transition-transform duration-300 hover:scale-105",

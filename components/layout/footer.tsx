@@ -24,7 +24,7 @@ const Nav = () => {
   return (
     <div className="flex shrink-0 gap-20">
       <div className="flex flex-col gap-2 tracking-widest">
-        <h3 className="mb-2 text-2xl text-[#ffffff80] uppercase">Navigation</h3>
+        <h1 className="mb-2 text-2xl text-[#ffffff80] uppercase">Navigation</h1>
         <Link href="/" className="text-xl">
           Home
         </Link>
