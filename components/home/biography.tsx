@@ -11,8 +11,7 @@ export default function Biography() {
             </h1>
           </TextReveal>
           <TextReveal delay={0.4}>
-            <p className="px-8 text-xl leading-9 tracking-wider sm:leading-12 md:text-3xl md:leading-15">
-              {/* <p className="font-poppins text-3xl leading-14"> */}
+            <div className="px-8 text-xl leading-9 tracking-wider sm:leading-12 md:text-3xl md:leading-15">
               Moshood Obatula is an award-winning filmmaker, director, and
               managing director behind RelatedMotion. Born in the vibrant city
               of Lagos, Nigeria, he nurtured his early passion for the arts. His
@@ -21,7 +20,7 @@ export default function Biography() {
               blends genres, infusing his films with elements of magical realism
               and vibrant cultural motifs that contribute to the distinctiveness
               of his work. This earned him the monicker “The Dark Visionary”.
-            </p>
+            </div>
           </TextReveal>
         </div>
       </div>
