@@ -57,34 +57,30 @@ export default function Hero() {
             direction="left"
             className="border border-[#262626]/50"
           >
-            <span>Executive Producer</span>
-            <div className="inline-block">
-              <span
-                className="mx-2 inline-block h-2 w-2 rotate-45 bg-white align-middle"
-                aria-label="diamond"
-              />
-            </div>
-            <span>Director</span>
-            <div className="inline-block">
-              <span
-                className="mx-2 inline-block h-2 w-2 rotate-45 bg-white align-middle"
-                aria-label="diamond"
-              />
-            </div>
-            <span>Managing Director</span>
-            <div className="inline-block">
-              <span
-                className="mx-2 inline-block h-2 w-2 rotate-45 bg-white align-middle"
-                aria-label="diamond"
-              />
-            </div>
-            <span>Creative Director</span>
-            <div className="inline-block">
-              <span
-                className="mx-2 inline-block h-2 w-2 rotate-45 bg-white align-middle"
-                aria-label="diamond"
-              />
-            </div>
+            <li>Executive Producer</li>
+            <li className="!p-0">
+              <div className="inline-block">
+                <span className="mx-2 inline-block h-2 w-2 rotate-45 bg-white align-middle" />
+              </div>
+            </li>
+            <li>Director</li>
+            <li className="!p-0">
+              <div className="inline-block">
+                <span className="mx-2 inline-block h-2 w-2 rotate-45 bg-white align-middle" />
+              </div>
+            </li>
+            <li>Managing Director</li>
+            <li className="!p-0">
+              <div className="inline-block">
+                <span className="mx-2 inline-block h-2 w-2 rotate-45 bg-white align-middle" />
+              </div>
+            </li>
+            <li>Creative Director</li>
+            <li className="!p-0">
+              <div className="inline-block">
+                <span className="mx-2 inline-block h-2 w-2 rotate-45 bg-white align-middle" />
+              </div>
+            </li>
           </InfiniteScroll>
         </motion.div>
       </div>

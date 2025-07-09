@@ -69,7 +69,6 @@
 }
 
 .tag_list li {
-  padding: 1rem;
   background: var(--bg-secondary);
   border-radius: 0.5rem;
   box-shadow: 0 0.5rem 1rem -0.25rem var(--bg-primary);

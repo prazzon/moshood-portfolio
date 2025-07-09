@@ -230,9 +230,9 @@ function CollaboratorCard({ collaborator }: { collaborator: Collaborator }) {
         alt="image"
       />
       <div className="absolute bottom-0 flex w-full flex-col justify-center space-y-2 p-3 text-center text-white">
-        <h1 className="z-10 leading-none font-medium tracking-widest md:text-xl">
+        <h2 className="z-10 leading-none font-medium tracking-widest md:text-xl">
           {collaborator.name}
-        </h1>
+        </h2>
         <span className="z-10 text-sm leading-none tracking-wide md:text-lg">
           {collaborator.project}
         </span>
