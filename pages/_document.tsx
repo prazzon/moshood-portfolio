@@ -10,10 +10,10 @@ export default function Document() {
         <meta httpEquiv="X-UA-Compatible" content="IE=edge" />
 
         {/* Favicon and Icons */}
-        <link rel="icon" href="/favicon.ico" />
-        <link rel="apple-touch-icon" sizes="180x180" href="/favicon.ico" />
-        <link rel="icon" type="image/png" sizes="32x32" href="/favicon.ico" />
-        <link rel="icon" type="image/png" sizes="16x16" href="/favicon.ico" />
+        <link rel="icon" href="/favicon.svg" />
+        <link rel="apple-touch-icon" sizes="180x180" href="/favicon.svg" />
+        <link rel="icon" type="image/png" sizes="32x32" href="/favicon.svg" />
+        <link rel="icon" type="image/png" sizes="16x16" href="/favicon.svg" />
 
         {/* Theme and App Configuration */}
         <meta name="theme-color" content="#000000" />
