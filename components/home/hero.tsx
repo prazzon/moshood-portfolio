@@ -86,20 +86,18 @@ export default function Hero() {
       </div>
 
       {/* Showreel Button */}
-      <VideoPlayerModal
-        videoUrl="https://res.cloudinary.com/dt5hzczvg/video/upload/v1751660504/thriller_MD_1_qewutm.mp4"
-        autoPlay
-        trigger={
-          <motion.div
-            initial={{ opacity: 0, scale: 0.8 }}
-            animate={{ opacity: 1, scale: 1 }}
-            transition={{ delay: 2, duration: 0.5 }}
-            className="absolute right-8 bottom-0 z-10 md:right-12 md:bottom-8"
-          >
-            <CircularButton onClick={handleShowreel} />
-          </motion.div>
-        }
-      />
+      <motion.div
+        initial={{ opacity: 0, scale: 0.8 }}
+        animate={{ opacity: 1, scale: 1 }}
+        transition={{ delay: 2, duration: 0.5 }}
+        className="absolute right-8 bottom-0 z-10 md:right-12 md:bottom-8"
+      >
+        <VideoPlayerModal
+          videoUrl="https://res.cloudinary.com/dt5hzczvg/video/upload/v1751660504/thriller_MD_1_qewutm.mp4"
+          autoPlay
+          trigger={<CircularButton onClick={handleShowreel} />}
+        />
+      </motion.div>
     </div>
   );
 }

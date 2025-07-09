@@ -46,11 +46,11 @@ const Item = ({
       <VideoPlayerModal
         videoUrl={item.src || "/videos/video-1.mp4"}
         trigger={
-          <motion.div
+          <motion.button
             initial={{ y: 48, opacity: 0 }}
             whileInView={{ y: 0, opacity: 1 }}
             transition={{ ease: "easeInOut", duration: 0.75 }}
-            className="group flex cursor-pointer items-center justify-between border-b border-zinc-800 px-3 py-9"
+            className="group flex w-full cursor-pointer items-center justify-between border-b border-zinc-800 px-3 py-9"
             onMouseEnter={() => {
               setModal({ active: true, index });
             }}
@@ -62,12 +62,14 @@ const Item = ({
               <p className="mb-1.5 text-2xl text-zinc-50 transition-transform duration-300 group-hover:-translate-x-2">
                 {title}
               </p>
-              <p className="text-lg text-zinc-500 uppercase">{subTitle}</p>
+              <p className="text-start text-lg text-zinc-500 uppercase">
+                {subTitle}
+              </p>
             </div>
             <div className="flex items-center gap-1.5 text-end text-lg text-zinc-500 uppercase">
               <p>{rightText}</p>
             </div>
-          </motion.div>
+          </motion.button>
         }
       />
     );

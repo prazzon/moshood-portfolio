@@ -11,22 +11,22 @@ export default function CTA() {
         speed="normal"
         direction="left"
       >
-        <span>Executive Producer</span>
-        <span>{"+"}</span>
-        <span>Director</span>
-        <span>{"+"}</span>
-        <span>Managing Director</span>
-        <span>{"+"}</span>
-        <span>Creative Director</span>
-        <span>{"+"}</span>
-        <span>Executive Producer</span>
-        <span>{"+"}</span>
-        <span>Director</span>
-        <span>{"+"}</span>
-        <span>Managing Director</span>
-        <span>{"+"}</span>
-        <span>Creative Director</span>
-        <span>{"+"}</span>
+        <li>Executive Producer</li>
+        <li>{"+"}</li>
+        <li>Director</li>
+        <li>{"+"}</li>
+        <li>Managing Director</li>
+        <li>{"+"}</li>
+        <li>Creative Director</li>
+        <li>{"+"}</li>
+        <li>Executive Producer</li>
+        <li>{"+"}</li>
+        <li>Director</li>
+        <li>{"+"}</li>
+        <li>Managing Director</li>
+        <li>{"+"}</li>
+        <li>Creative Director</li>
+        <li>{"+"}</li>
       </InfiniteScroll>
       <div className="mx-auto flex max-w-7xl flex-col justify-between p-8 md:flex-row">
         <TextReveal>
@@ -75,22 +75,22 @@ export default function CTA() {
         speed="normal"
         direction="left"
       >
-        <span>Executive Producer</span>
-        <span>{"+"}</span>
-        <span>Director</span>
-        <span>{"+"}</span>
-        <span>Managing Director</span>
-        <span>{"+"}</span>
-        <span>Creative Director</span>
-        <span>{"+"}</span>
-        <span>Executive Producer</span>
-        <span>{"+"}</span>
-        <span>Director</span>
-        <span>{"+"}</span>
-        <span>Managing Director</span>
-        <span>{"+"}</span>
-        <span>Creative Director</span>
-        <span>{"+"}</span>
+        <li>Executive Producer</li>
+        <li>{"+"}</li>
+        <li>Director</li>
+        <li>{"+"}</li>
+        <li>Managing Director</li>
+        <li>{"+"}</li>
+        <li>Creative Director</li>
+        <li>{"+"}</li>
+        <li>Executive Producer</li>
+        <li>{"+"}</li>
+        <li>Director</li>
+        <li>{"+"}</li>
+        <li>Managing Director</li>
+        <li>{"+"}</li>
+        <li>Creative Director</li>
+        <li>{"+"}</li>
       </InfiniteScroll>
     </div>
   );
