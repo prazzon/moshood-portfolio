@@ -11,7 +11,7 @@ import {
   useScroll,
   useTransform,
 } from "framer-motion";
-import { Play } from "lucide-react";
+import { ChevronDown, Play } from "lucide-react";
 import Image from "next/image";
 import { useRef } from "react";
 import VideoPlayerModal from "../ui/video-player";
@@ -40,6 +40,16 @@ export default function ShowreelHome() {
   const scale8 = useTransform(scrollYProgress, [0, 1], [1, 8]);
   const scale9 = useTransform(scrollYProgress, [0, 1], [1, 9]);
   const textY = useTransform(scrollYProgress, [0.8, 0.9], ["105%", "0%"]);
+
+  // Progress indicator animations
+  const progressWidth = useTransform(scrollYProgress, [0, 0.95], ["0%", "95%"]);
+  const progressOpacity = useTransform(
+    scrollYProgress,
+    [0, 0.1, 0.9, 1],
+    [0, 1, 1, 0],
+  );
+  const indicatorY = useTransform(scrollYProgress, [0, 0.2], ["20px", "0px"]);
+  const chevronBounce = useTransform(scrollYProgress, [0, 0.5], [0, 10]);
 
   const pictures = [
     {
@@ -118,6 +128,35 @@ export default function ShowreelHome() {
           );
         })}
       </div>
+
+      {/* Keep Scrolling Progress Indicator */}
+      <motion.div
+        className="fixed top-1/2 right-6 z-20 -translate-y-1/2 mix-blend-difference md:right-12"
+        style={{ opacity: progressOpacity, y: indicatorY }}
+      >
+        <div className="flex flex-col items-center gap-4">
+          {/* Progress Bar */}
+          <div className="relative h-32 w-2 rounded-full bg-white/20 md:h-40">
+            <motion.div
+              className="absolute bottom-0 left-0 w-full rounded-full bg-white"
+              style={{ height: progressWidth }}
+            />
+          </div>
+
+          {/* Keep Scrolling Text */}
+          <div className="flex flex-col items-center gap-2">
+            <motion.div className="animate-bounce" style={{ y: chevronBounce }}>
+              <ChevronDown className="h-5 w-5 text-white md:h-6 md:w-6" />
+            </motion.div>
+            <p className="text-invert text-center text-base font-medium tracking-wider text-white">
+              KEEP
+              <br />
+              SCROLLING
+            </p>
+          </div>
+        </div>
+      </motion.div>
+
       <div className="absolute right-0 bottom-0 left-0 h-96 bg-gradient-to-b from-zinc-950/0 to-zinc-950" />
     </div>
   );
