@@ -192,7 +192,7 @@ export default function Navigation() {
                 initial="initial"
                 animate="open"
                 exit="initial"
-                className="font-lora absolute top-0 left-0 flex h-full w-full flex-col items-center justify-center gap-6"
+                className="absolute top-0 left-0 flex h-full w-full flex-col items-center justify-center gap-6"
               >
                 {navLinks.map((link, index) => {
                   return (
@@ -205,6 +205,21 @@ export default function Navigation() {
                     </div>
                   );
                 })}
+              </motion.div>
+              <motion.div
+                variants={headerElementVars}
+                initial="initial"
+                animate="animate"
+                exit="exit"
+                className="mt-auto mb-4 flex justify-center"
+              >
+                <FlipLink
+                  href="/showreel"
+                  className="cursor-pointer border-b-4 border-black text-center text-4xl tracking-wide"
+                  onClick={() => handleClick("/showreel")}
+                >
+                  View Showreel
+                </FlipLink>
               </motion.div>
             </div>
           </motion.div>

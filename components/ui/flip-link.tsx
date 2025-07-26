@@ -6,14 +6,15 @@ type Props = {
   children: string;
   href: string;
   className?: string;
+  onClick?: () => void;
 };
 
 const DURATION = 0.25;
 const STAGGER = 0.025;
 
-const FlipLink = ({ children, href, className }: Props) => {
+const FlipLink = ({ children, href, className, onClick }: Props) => {
   return (
-    <Link href={href}>
+    <Link href={href} onClick={onClick}>
       <motion.div
         initial="initial"
         whileHover="hovered"
