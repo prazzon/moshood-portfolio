@@ -3,7 +3,7 @@
 import VideoPlayerModal from "@/components/ui/video-player";
 import { btsVideos } from "@/constants";
 import { motion, useScroll, useTransform } from "framer-motion";
-import { Film, Play } from "lucide-react";
+import { Play } from "lucide-react";
 import Image from "next/image";
 import { useRef } from "react";
 import TextReveal from "../ui/text-reveal";
@@ -60,17 +60,17 @@ export default function BTSList() {
         className="mt-16 mb-12 text-center"
       >
         <div className="mb-4 flex items-center justify-center gap-3">
-          <Film className="size-12 pb-2 text-white md:size-16" />
           <TextReveal>
             <h2 className="text-5xl font-bold text-white md:text-7xl">
               Behind The Scenes Reel
             </h2>
           </TextReveal>
-          <Film className="size-12 pb-2 text-white md:size-16" />
         </div>
-        <p className="pb-18 text-lg text-gray-400 md:text-xl">
-          A cinematic journey through Moshood&apos;s creative process
-        </p>
+        <TextReveal delay={0.1}>
+          <p className="pb-18 text-xl text-gray-400 md:text-2xl">
+            A cinematic journey through Moshood&apos;s creative process
+          </p>
+        </TextReveal>
       </motion.div>
 
       {/* Main Filmstrip */}
@@ -115,7 +115,7 @@ export default function BTSList() {
                         src={video.thumbnail}
                         alt={video.title}
                         fill
-                        className="object-cover sepia-[0.3] transition-all duration-700 group-hover:scale-110 group-hover:sepia-0"
+                        className="object-cover grayscale sepia-[0.3] transition-all duration-700 group-hover:scale-110 group-hover:sepia-0"
                       />
 
                       {/* Vintage Film Overlay */}
@@ -127,7 +127,7 @@ export default function BTSList() {
                       {/* Play Button */}
                       <div className="absolute inset-0 flex items-center justify-center opacity-0 transition-all duration-500 group-hover:opacity-100">
                         <motion.div
-                          className="flex h-16 w-16 items-center justify-center rounded-full border-2 border-amber-400/50 bg-amber-500/20 backdrop-blur-sm"
+                          className="flex h-16 w-16 items-center justify-center rounded-full border-2 border-amber-400/50 bg-amber-500/20"
                           whileHover={{ scale: 1.2, rotate: 5 }}
                           whileTap={{ scale: 0.8 }}
                         >

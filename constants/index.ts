@@ -155,7 +155,7 @@ export const btsVideos: BTSVideo[] = [
 export type ShowreelVideo = {
   id: string;
   title: string;
-  description: string;
+  //   description: string;
   year: number;
   duration: string;
   thumbnail: string;
@@ -164,35 +164,29 @@ export type ShowreelVideo = {
 
 export const showreelVideos: ShowreelVideo[] = [
   {
-    id: "agemo-bts-1",
-    title: "Agemo: Director's Vision",
-    description:
-      "Moshood discusses his creative vision and approach to bringing the supernatural thriller Agemo to life.",
+    id: "showreel_1",
+    title: "Showreel 1",
     year: 2024,
-    duration: "3:45",
-    thumbnail: "/images/biography.png",
+    duration: "2:50",
+    thumbnail: "/images/showreel/2.png",
     videoUrl:
       "https://res.cloudinary.com/dt5hzczvg/video/upload/v1753311347/showreel_yi22rk.mp4",
   },
   {
-    id: "ctf-production",
-    title: "Create The Future: Production Insights",
-    description:
-      "An intimate look at the production process of Create The Future, from pre-production to final cut.",
+    id: "showreel_2",
+    title: "Showreel 2",
     year: 2024,
-    duration: "4:28",
-    thumbnail: "/images/bts.png",
+    duration: "1:35",
+    thumbnail: "/images/showreel/3.png",
     videoUrl:
       "https://res.cloudinary.com/dt5hzczvg/video/upload/v1753311489/showreel2_ojznku.mp4",
   },
   {
-    id: "invest-naija-process",
-    title: "Invest Naija: Creative Process",
-    description:
-      "Exploring the creative decisions and storytelling approach behind the Invest Naija project.",
+    id: "showreel_3",
+    title: "Showreel 3",
     year: 2024,
-    duration: "2:56",
-    thumbnail: "/images/filmography.png",
+    duration: "0:50",
+    thumbnail: "/images/showreel/4.png",
     videoUrl:
       "https://res.cloudinary.com/dt5hzczvg/video/upload/v1753285553/showreel3_ecowjr.mp4",
   },
