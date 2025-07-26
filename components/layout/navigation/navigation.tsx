@@ -24,8 +24,8 @@ const navLinks = [
     href: "/press",
   },
   {
-    title: "Showreel",
-    href: "/showreel",
+    title: "BTS",
+    href: "/bts",
   },
 ];
 
@@ -135,7 +135,9 @@ export default function Navigation() {
             })}
           </nav>
           <div className="ml-auto hidden -translate-y-1 border-b-2 border-white text-xl tracking-wide sm:block">
-            <Link href="/contact">Let&apos;s work together</Link>
+            <FlipLink href="/showreel" className="text-xl tracking-wider">
+              Check out Showreel
+            </FlipLink>
           </div>
           {/* Mobile menu button */}
           <div
