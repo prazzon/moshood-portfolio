@@ -112,6 +112,86 @@ export const pressItems: Item[] = [
   },
 ];
 
+export type BTSVideo = {
+  id: string;
+  title: string;
+  description: string;
+  project?: string;
+  year: number;
+  duration: string;
+  thumbnail: string;
+  videoUrl: string;
+  category: "production" | "interview" | "process" | "behind-scenes";
+};
+
+export const btsVideos: BTSVideo[] = [
+  {
+    id: "director_mosh_thriller",
+    title: "Director Moshood - Thriller",
+    description:
+      "The suspense starts before the first take. Go behind the scenes with Director Mosh.",
+    year: 2024,
+    duration: "0:50",
+    thumbnail: "/images/showreel/7.png",
+    videoUrl:
+      "https://res.cloudinary.com/dt5hzczvg/video/upload/v1751660504/thriller_MD_1_qewutm.mp4",
+    category: "process",
+  },
+  {
+    id: "invest_naija_bts",
+    title: "Invest Naija: On Set with Moshood",
+    description:
+      "Watch Moshood as he works on the set of Invest Naija, capturing his creative process and directorial approach.",
+    project: "Invest Naija",
+    year: 2024,
+    duration: "1:55",
+    thumbnail: "/images/bts/invest_9ja.png",
+    videoUrl:
+      "https://res.cloudinary.com/dt5hzczvg/video/upload/v1753552346/Related_Motion_-_Invest_9ja_BTS_dxtqjl.mp4",
+    category: "behind-scenes",
+  },
+];
+
+export type ShowreelVideo = {
+  id: string;
+  title: string;
+  //   description: string;
+  year: number;
+  duration: string;
+  thumbnail: string;
+  videoUrl: string;
+};
+
+export const showreelVideos: ShowreelVideo[] = [
+  {
+    id: "showreel_1",
+    title: "Showreel 1",
+    year: 2024,
+    duration: "2:50",
+    thumbnail: "/images/showreel/2.png",
+    videoUrl:
+      "https://res.cloudinary.com/dt5hzczvg/video/upload/v1753311347/showreel_yi22rk.mp4",
+  },
+  {
+    id: "showreel_2",
+    title: "Showreel 2",
+    year: 2024,
+    duration: "1:35",
+    thumbnail: "/images/showreel/3.png",
+    videoUrl:
+      "https://res.cloudinary.com/dt5hzczvg/video/upload/v1753311489/showreel2_ojznku.mp4",
+  },
+  {
+    id: "showreel_3",
+    title: "Showreel 3",
+    year: 2024,
+    duration: "0:50",
+    thumbnail: "/images/showreel/4.png",
+    videoUrl:
+      "https://res.cloudinary.com/dt5hzczvg/video/upload/v1753285553/showreel3_ecowjr.mp4",
+  },
+];
+
 export const collaborators = [
   {
     name: "Eniola Badmus",
@@ -400,6 +480,23 @@ export const pageSEO = {
       "festregards",
     ],
     ogImage: "/images/press.png",
+    ogType: "website" as const,
+  },
+  bts: {
+    title: `Behind The Scenes | ${siteConfig.name}`,
+    description:
+      "Go behind the scenes with Moshood Abiola Obatula. Explore exclusive behind-the-scenes footage, creative process insights, and intimate glimpses into the making of his acclaimed films.",
+    keywords: [
+      ...siteConfig.keywords,
+      "behind the scenes",
+      "BTS",
+      "making of",
+      "creative process",
+      "film production",
+      "director insights",
+      "exclusive footage",
+    ],
+    ogImage: "/images/bts.png",
     ogType: "website" as const,
   },
   showreel: {

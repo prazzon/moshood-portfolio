@@ -24,8 +24,8 @@ const navLinks = [
     href: "/press",
   },
   {
-    title: "Showreel",
-    href: "/showreel",
+    title: "BTS",
+    href: "/bts",
   },
 ];
 
@@ -135,7 +135,9 @@ export default function Navigation() {
             })}
           </nav>
           <div className="ml-auto hidden -translate-y-1 border-b-2 border-white text-xl tracking-wide sm:block">
-            <Link href="/contact">Let&apos;s work together</Link>
+            <FlipLink href="/showreel" className="text-xl tracking-wider">
+              Check out Showreel
+            </FlipLink>
           </div>
           {/* Mobile menu button */}
           <div
@@ -190,7 +192,7 @@ export default function Navigation() {
                 initial="initial"
                 animate="open"
                 exit="initial"
-                className="font-lora absolute top-0 left-0 flex h-full w-full flex-col items-center justify-center gap-6"
+                className="absolute top-0 left-0 flex h-full w-full flex-col items-center justify-center gap-6"
               >
                 {navLinks.map((link, index) => {
                   return (
@@ -203,6 +205,21 @@ export default function Navigation() {
                     </div>
                   );
                 })}
+              </motion.div>
+              <motion.div
+                variants={headerElementVars}
+                initial="initial"
+                animate="animate"
+                exit="exit"
+                className="mt-auto mb-4 flex justify-center"
+              >
+                <FlipLink
+                  href="/showreel"
+                  className="cursor-pointer border-b-4 border-black text-center text-4xl tracking-wide"
+                  onClick={() => handleClick("/showreel")}
+                >
+                  View Showreel
+                </FlipLink>
               </motion.div>
             </div>
           </motion.div>

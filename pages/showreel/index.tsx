@@ -2,7 +2,7 @@
 
 import SEO from "@/components/seo/seo";
 import Hero from "@/components/showreel/hero";
-import ShowreelList from "@/components/showreel/showreel-list";
+import ShowreelGallery from "@/components/showreel/showreel-gallery";
 import { pageSEO } from "@/constants";
 import { cancelFrame, frame } from "framer-motion";
 import ReactLenis, { LenisRef } from "lenis/react";
@@ -33,7 +33,7 @@ export default function Showreel() {
       />
       <ReactLenis root options={{ autoRaf: false }} ref={lenisRef}>
         <Hero />
-        <ShowreelList />
+        <ShowreelGallery />
       </ReactLenis>
     </>
   );
