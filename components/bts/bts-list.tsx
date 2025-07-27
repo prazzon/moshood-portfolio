@@ -57,7 +57,7 @@ export default function BTSList() {
       <motion.div
         initial={{ opacity: 0, y: -20 }}
         animate={{ opacity: 1, y: 0 }}
-        className="mt-16 mb-12 text-center"
+        className="mt-16 mb-12 px-4 text-center"
       >
         <div className="mb-4 flex items-center justify-center gap-3">
           <TextReveal>
