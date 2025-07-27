@@ -156,7 +156,7 @@ export default function ShowreelGallery() {
                 <VideoPlayerModal
                   videoUrl={video.videoUrl}
                   trigger={
-                    <div className="h-full cursor-pointer overflow-hidden rounded-4xl bg-zinc-900 shadow-2xl">
+                    <div className="h-full cursor-pointer overflow-hidden rounded-2xl bg-zinc-900 shadow-2xl md:rounded-4xl">
                       {/* Thumbnail */}
                       <div className="relative h-full overflow-hidden">
                         <Image
