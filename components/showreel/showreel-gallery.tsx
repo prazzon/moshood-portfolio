@@ -63,11 +63,7 @@ export default function ShowreelGallery() {
 
   return (
     <div className="relative mx-auto mb-24 max-w-5xl px-4 py-12">
-      <motion.div
-        initial={{ opacity: 0, y: -20 }}
-        animate={{ opacity: 1, y: 0 }}
-        className="mt-8 text-center"
-      >
+      <div className="mt-8 text-center">
         <div className="mb-4 flex items-center justify-center gap-3">
           <TextReveal>
             <h2 className="text-5xl font-bold text-white md:text-7xl">
@@ -81,8 +77,12 @@ export default function ShowreelGallery() {
             storytelling style and cinematic flair.
           </p>
         </TextReveal>
-      </motion.div>
-      <div className="relative">
+      </div>
+      <motion.div
+        initial={{ opacity: 0, y: -20 }}
+        whileInView={{ opacity: 1, y: 0 }}
+        className="relative"
+      >
         {/* Progress Bar */}
         <div className="mb-8">
           <div className="h-1 overflow-hidden rounded-full bg-white/10">
@@ -172,9 +172,9 @@ export default function ShowreelGallery() {
                           <motion.button
                             whileHover={{ scale: 1.2, rotate: 10 }}
                             whileTap={{ scale: 0.8 }}
-                            className="flex cursor-pointer items-center gap-1 overflow-hidden rounded-full bg-black/80 p-6"
+                            className="flex cursor-pointer items-center gap-1 overflow-hidden rounded-full bg-black/80 p-4 md:p-6"
                           >
-                            <Play className="size-10 fill-white" />
+                            <Play className="size-8 fill-white md:size-10" />
                           </motion.button>
                         </div>
                         {/* Category & Duration */}
@@ -191,7 +191,7 @@ export default function ShowreelGallery() {
             );
           })}
         </motion.div>
-      </div>
+      </motion.div>
 
       {/* Custom scrollbar styles */}
       <style jsx>{`

@@ -158,7 +158,7 @@ export default function Navigation() {
             initial="initial"
             animate="animate"
             exit="exit"
-            className="fixed top-0 left-0 z-99 h-screen w-full origin-top bg-white p-10 py-4 text-black"
+            className="fixed top-0 left-0 z-99 h-[100dvh] w-full origin-top bg-white p-10 py-4 text-black"
           >
             <div className="relative flex h-full flex-col">
               {" "}
