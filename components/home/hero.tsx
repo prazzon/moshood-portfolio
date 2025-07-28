@@ -2,10 +2,10 @@
 
 import { cn } from "@/lib/utils";
 import { motion } from "framer-motion";
+import Link from "next/link";
 import { AnimatedLetters } from "../ui/animated-letters";
 import { CircularButton } from "../ui/circular-button";
 import InfiniteScroll from "../ui/infinite-scroll/infinite-scroll";
-import VideoPlayerModal from "../ui/video-player";
 
 export default function Hero() {
   const handleShowreel = () => {
@@ -92,11 +92,9 @@ export default function Hero() {
         transition={{ delay: 2, duration: 0.5 }}
         className="absolute right-8 bottom-0 z-10 md:right-12 md:bottom-8"
       >
-        <VideoPlayerModal
-          videoUrl="https://res.cloudinary.com/dt5hzczvg/video/upload/v1751660504/thriller_MD_1_qewutm.mp4"
-          autoPlay
-          trigger={<CircularButton onClick={handleShowreel} />}
-        />
+        <Link href="/showreel">
+          <CircularButton onClick={handleShowreel} />
+        </Link>
       </motion.div>
     </div>
   );

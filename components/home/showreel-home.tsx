@@ -13,8 +13,8 @@ import {
 } from "framer-motion";
 import { ChevronDown, Play } from "lucide-react";
 import Image from "next/image";
+import Link from "next/link";
 import { useRef } from "react";
-import VideoPlayerModal from "../ui/video-player";
 export default function ShowreelHome() {
   const container = useRef(null);
   const imageRef = useRef(null);
@@ -110,16 +110,12 @@ export default function ShowreelHome() {
                       className="flex justify-center text-center text-[8px] font-bold tracking-wide md:text-xl"
                       style={{ y: textY }}
                     >
-                      <VideoPlayerModal
-                        videoUrl="https://res.cloudinary.com/dt5hzczvg/video/upload/v1751660504/thriller_MD_1_qewutm.mp4"
-                        autoPlay
-                        trigger={
-                          <button className="flex cursor-pointer items-center gap-1 overflow-hidden rounded-full bg-black/80 px-2 py-1 md:gap-2 md:px-4">
-                            <Play className="size-2 md:size-4" />
-                            View Showreel
-                          </button>
-                        }
-                      />
+                      <Link href="/showreel">
+                        <button className="flex cursor-pointer items-center gap-1 overflow-hidden rounded-full bg-black/80 px-2 py-1 md:gap-2 md:px-4">
+                          <Play className="size-2 md:size-4" />
+                          View Showreel
+                        </button>
+                      </Link>
                     </motion.p>
                   </div>
                 )}
