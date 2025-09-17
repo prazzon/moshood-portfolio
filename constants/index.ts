@@ -39,7 +39,7 @@ export const filmographyItems: Item[] = [
     subTitle: "2024",
     rightText: "Director & EP",
     type: "video",
-    src: "https://res.cloudinary.com/dt5hzczvg/video/upload/v1750765028/jwsg0ct6xwtklxbjhdyl.mp4",
+    src: "https://res.cloudinary.com/relatedmotion/video/upload/v1750765028/director-mosh/jwsg0ct6xwtklxbjhdyl.mp4",
     image: "/images/filmography/ctf.png",
   },
   {
@@ -47,7 +47,7 @@ export const filmographyItems: Item[] = [
     subTitle: "2020",
     rightText: "Director & EP",
     type: "video",
-    src: "https://res.cloudinary.com/dt5hzczvg/video/upload/v1750765705/xe2uuyxsyggzfoprsedq.mp4",
+    src: "https://res.cloudinary.com/relatedmotion/video/upload/v1750765705/director-mosh/xe2uuyxsyggzfoprsedq.mp4",
     image: "/images/filmography/plagued.png",
   },
   {
@@ -55,7 +55,7 @@ export const filmographyItems: Item[] = [
     subTitle: "2019",
     rightText: "Director & EP",
     type: "video",
-    src: "https://res.cloudinary.com/dt5hzczvg/video/upload/v1750766564/kbkeguycblpbd0hz6oub.mp4",
+    src: "https://res.cloudinary.com/relatedmotion/video/upload/v1750766564/director-mosh/kbkeguycblpbd0hz6oub.mp4",
     image: "/images/filmography/stretched.png",
   },
   {
@@ -63,7 +63,7 @@ export const filmographyItems: Item[] = [
     subTitle: "2019",
     rightText: "Director & EP",
     type: "video",
-    src: "https://res.cloudinary.com/dt5hzczvg/video/upload/v1750766589/ago1twsbwxo6izezuplc.mp4",
+    src: "https://res.cloudinary.com/relatedmotion/video/upload/v1750766589/director-mosh/ago1twsbwxo6izezuplc.mp4",
     image: "/images/filmography/now.png",
   },
   {
@@ -71,7 +71,7 @@ export const filmographyItems: Item[] = [
     subTitle: "2019",
     rightText: "Director & EP",
     type: "video",
-    src: "https://res.cloudinary.com/dt5hzczvg/video/upload/v1750767517/skokpufjeevydoekoqbf.mp4",
+    src: "https://res.cloudinary.com/relatedmotion/video/upload/v1750767517/director-mosh/skokpufjeevydoekoqbf.mp4",
     image: "/images/filmography/part_of_me.png",
   },
   {
@@ -134,7 +134,7 @@ export const btsVideos: BTSVideo[] = [
     duration: "0:50",
     thumbnail: "/images/showreel/7.png",
     videoUrl:
-      "https://res.cloudinary.com/dt5hzczvg/video/upload/v1751660504/thriller_MD_1_qewutm.mp4",
+      "https://res.cloudinary.com/relatedmotion/video/upload/v1751660504/director-mosh/thriller_MD_1_qewutm.mp4",
     category: "process",
   },
   {
@@ -147,7 +147,7 @@ export const btsVideos: BTSVideo[] = [
     duration: "1:55",
     thumbnail: "/images/bts/invest_9ja.png",
     videoUrl:
-      "https://res.cloudinary.com/dt5hzczvg/video/upload/v1753552346/Related_Motion_-_Invest_9ja_BTS_dxtqjl.mp4",
+      "https://res.cloudinary.com/relatedmotion/video/upload/v1753552346/director-mosh/Related_Motion_-_Invest_9ja_BTS_dxtqjl.mp4",
     category: "behind-scenes",
   },
 ];
@@ -170,7 +170,7 @@ export const showreelVideos: ShowreelVideo[] = [
     duration: "2:50",
     thumbnail: "/images/showreel/2.png",
     videoUrl:
-      "https://res.cloudinary.com/dt5hzczvg/video/upload/v1753311347/showreel_yi22rk.mp4",
+      "https://res.cloudinary.com/relatedmotion/video/upload/v1753311347/director-mosh/showreel_yi22rk.mp4",
   },
   {
     id: "showreel_2",
@@ -179,7 +179,7 @@ export const showreelVideos: ShowreelVideo[] = [
     duration: "1:35",
     thumbnail: "/images/showreel/3.png",
     videoUrl:
-      "https://res.cloudinary.com/dt5hzczvg/video/upload/v1753311489/showreel2_ojznku.mp4",
+      "https://res.cloudinary.com/relatedmotion/video/upload/v1753311489/director-mosh/showreel2_ojznku.mp4",
   },
   {
     id: "showreel_3",
@@ -188,7 +188,7 @@ export const showreelVideos: ShowreelVideo[] = [
     duration: "0:50",
     thumbnail: "/images/showreel/4.png",
     videoUrl:
-      "https://res.cloudinary.com/dt5hzczvg/video/upload/v1753285553/showreel3_ecowjr.mp4",
+      "https://res.cloudinary.com/relatedmotion/video/upload/v1753285553/director-mosh/showreel3_ecowjr.mp4",
   },
 ];
 
