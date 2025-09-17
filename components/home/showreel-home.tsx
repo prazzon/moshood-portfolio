@@ -5,12 +5,7 @@ import Picture4 from "@/public/images/showreel/4.png";
 import Picture5 from "@/public/images/showreel/5.png";
 import Picture6 from "@/public/images/showreel/6.png";
 import Picture7 from "@/public/images/showreel/7.png";
-import {
-   motion,
-   useMotionValueEvent,
-   useScroll,
-   useTransform,
-} from "framer-motion";
+import { motion, useScroll, useTransform } from "framer-motion";
 import { ChevronDown, Play } from "lucide-react";
 import Image from "next/image";
 import Link from "next/link";
