@@ -80,7 +80,7 @@ export default function ShowreelList() {
                     style={{ y: sm }}
                   >
                     <VideoPlayerModal
-                      videoUrl="https://res.cloudinary.com/dt5hzczvg/video/upload/v1751660504/thriller_MD_1_qewutm.mp4"
+                      videoUrl="https://res.cloudinary.com/relatedmotion/video/upload/v1751660504/director-mosh/thriller_MD_1_qewutm.mp4"
                       autoPlay
                       trigger={
                         <button className="flex cursor-pointer items-center gap-1 overflow-hidden rounded-full bg-black/80 p-6">

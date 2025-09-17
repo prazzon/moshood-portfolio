@@ -6,10 +6,10 @@ import Picture5 from "@/public/images/showreel/5.png";
 import Picture6 from "@/public/images/showreel/6.png";
 import Picture7 from "@/public/images/showreel/7.png";
 import {
-  motion,
-  useMotionValueEvent,
-  useScroll,
-  useTransform,
+   motion,
+   useMotionValueEvent,
+   useScroll,
+   useTransform,
 } from "framer-motion";
 import { ChevronDown, Play } from "lucide-react";
 import Image from "next/image";
@@ -27,10 +27,6 @@ export default function ShowreelHome() {
   const { scrollYProgress: opacityProgress } = useScroll({
     target: imageRef,
     offset: ["end start", "end end"],
-  });
-
-  useMotionValueEvent(opacityProgress, "change", (latest) => {
-    console.log("Page scroll: ", latest);
   });
 
   const opacity = useTransform(opacityProgress, [0.5, 0], [1, 0.2]);
