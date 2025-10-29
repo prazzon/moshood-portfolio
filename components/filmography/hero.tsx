@@ -40,6 +40,7 @@ export default function Hero() {
             fill
             alt="image"
             className="object-cover object-[50%_10%] grayscale"
+            priority
           />
         </motion.div>
       </motion.div>

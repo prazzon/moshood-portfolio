@@ -74,6 +74,7 @@ export default function Section() {
             fill
             alt="image"
             className="object-cover object-[50%_50%] grayscale"
+            priority
           />
           <div className="absolute inset-0 bg-black/60"></div>
         </motion.div>

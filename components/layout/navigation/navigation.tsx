@@ -119,6 +119,7 @@ export default function Navigation() {
               alt="signature"
               width={100}
               height={50}
+              priority
             />
           </Link>
           <nav className="absolute left-[50%] hidden translate-x-[-50%] list-none items-center justify-center gap-4 space-x-4 text-xl tracking-wider md:flex">

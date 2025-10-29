@@ -40,6 +40,7 @@ export default function Hero() {
             fill
             alt="Behind the scenes with Moshood Abiola Obatula"
             className="object-cover object-[50%_30%] grayscale"
+            priority
           />
         </motion.div>
       </motion.div>
